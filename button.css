@@ -1,0 +1,18 @@
+.button {
+  background-image: url("assets/button.png");
+  border: 1px solid black;
+  color: white;
+  padding: 4px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+label {
+  color: white;
+}
+
+p {
+  color: white;
+}

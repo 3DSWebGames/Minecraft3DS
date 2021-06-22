@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Minecraft 3DS</title>
+    <meta name="viewport" content="width=320">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="background.css">
+    <style type="text/css">
+      #screen{width:320px;height:212px;overflow:hidden;}
+      #title{width:320px;height:212px;overflow:hidden;}
+      #singleplayer{width:320px;height:212px;overflow:hidden;}
+    </style>
+  </head>
+  <body onload="setTimeout('load();',4000);">
+    <div id="screen">
+      <img id="splash" src="assets/splash.png">
+      <div id="title" class="background_1">
+        <img src="assets/logo.png">
+        <center>
+        <div id="menu_1">
+          <a href="javascript:SingleplayerClick();" class="button">Singleplayer</a>
+          <a href="javascript:MultiplayerClick();" class="button">Multiplayer</a>
+          <a href="javascript:OptionsClick();" class="button">Options</a>
+        </div>
+        </center>
+        <p>ver 1.0.0</p>
+      </div>
+      <div id="singleplayer" class="background_2">
+      <br><br><br><center>
+      <label for="world">World name:</label><br>
+      <input type="text" id="world" name="world"><br><br>
+      <a href="game.html" class="button">Start Game</a>
+      </center>
+      </div>
+    </div>
+    <style type="text/css">
+    .background_1 {
+    background-image: url("assets/background_1.png");
+    }
+    </style>
+    <script src="title.js" type="text/javascript"></script>
+  </body>
+</html>
